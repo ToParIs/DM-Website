@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_title">Montreal Structural Engineers | Dahl Marzin Inc.</title>
+  <meta name="description" content="DAHL MARZIN INC. is a structural engineering consulting firm established in 1991, specializing in residential, commercial and industrial buildings.">
+  <link rel="icon" type="image/png" href="assets/images/logo-white.png">
+
+  <!-- Google Fonts: Inter & Lato (including Lato-Light 300) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Transparent Header (Hamburger on Left, EN | FR on Right)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Minimalist Hamburger (Drawer Trigger) -->
+      <button type="button" class="drawer-toggle-btn" id="drawerToggle" aria-label="Open Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Language Switcher (EN | FR text-only) -->
+      <div class="lang-switch-wrap">
+        <button type="button" class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Slide-out Drawer Navigation
+       ========================================================================== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="nav-drawer" id="navDrawer" aria-label="Main Navigation Drawer">
+    <div>
+      <button type="button" class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation Menu">✕</button>
+      <ul class="drawer-menu">
+        <li><a href="#home" class="drawer-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="#about" class="drawer-link" data-i18n="nav_about">About Us</a></li>
+        <li><a href="#services" class="drawer-link" data-i18n="nav_services">Specialty & Services</a></li>
+        <li><a href="#projects" class="drawer-link" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#team" class="drawer-link" data-i18n="nav_team">Our Team</a></li>
+        <li><a href="#contact" class="drawer-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="drawer-footer">
+      <p style="margin: 0;">DAHL MARZIN INC.</p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section (Logo Glow, Lato-Light, Extra Spacing, Subtle CTA)
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-video-container">
+      <video id="heroVideo" class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+        <source src="assets/videos/hero-video-720p.mp4" type="video/mp4">
+        <source src="assets/videos/hero-video-480p.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- White Emblem Logo (Prominent 1.8x, positioned higher, subtle glow) -->
+      <img src="assets/images/logo-white.png" alt="Dahl Marzin Inc. Emblem" class="hero-emblem">
+
+      <!-- Company Name in Lato-Light with subtle glow and more space before headline -->
+      <h2 class="hero-company-name" data-i18n="hero_company">DAHL MARZIN INC.</h2>
+
+      <!-- Modern Headline in Inter -->
+      <h1 class="hero-main-title">
+        <span class="line-1" data-i18n="hero_title_2">Structural Engineering Firm</span>
+        <span class="line-2" data-i18n="hero_title_3">you can rely on</span>
+      </h1>
+
+      <!-- Subtle Ghost/Glass Button -->
+      <a href="#contact" class="btn-subtle" data-i18n="hero_btn">Contact Our Team</a>
+    </div>
+
+    <!-- Downward Arrow Navigation -->
+    <a href="#about" aria-label="Scroll to About Section">
+      <img src="assets/images/arrow-down.png" alt="Arrow Down" class="hero-arrow-down">
+    </a>
+  </section>
+
+  <!-- ==========================================================================
+       About Us Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-card">
+          <img src="assets/images/about-bg.jpg" alt="Dahl Marzin Architectural Plans">
+          <div class="about-badge">
+            <span data-i18n="about_badge_sub">Established</span>
+            <strong data-i18n="about_badge_main">Since 1991</strong>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag" data-i18n="about_tag">About Us</span>
+          <h2 data-i18n="about_title">Structural Engineering Consulting Since 1991</h2>
+          <p data-i18n="about_p1">
+            DAHL MARZIN INC. is a structural engineering consulting firm established in 1991, specializing in residential, commercial and industrial buildings. Our team possesses deep practical expertise in steel, concrete, and timber structures.
+          </p>
+          <p data-i18n="about_p2">
+            We design all types of structures and provide optimal, practical consultation with cost-effective and dependable solutions to help our clients meet their construction budget and project timelines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Specialty & Services Section (Crisp, Modern Cards)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services_tag">Our Services</span>
+        <h2 class="section-title" data-i18n="services_title">Engineering Specialties & Solutions</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/icon-blueprint.png" alt="Design & Structures">
+          </div>
+          <h3 class="service-card-title" data-i18n="service_card1_title">Design & Structures</h3>
+          <ul class="service-list">
+            <li data-i18n="service_card1_item1">Structures of Buildings</li>
+            <li data-i18n="service_card1_item2">Foundation Designs</li>
+            <li data-i18n="service_card1_item3">Steel & Concrete Structures</li>
+            <li data-i18n="service_card1_item4">Retaining Walls & Reservoirs</li>
+            <li data-i18n="service_card1_item5">Piles & Underpinning</li>
+            <li data-i18n="service_card1_item6">Restoration & Repair of Existing Structures</li>
+            <li data-i18n="service_card1_item7">Timber Construction</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/icon-house.png" alt="Building Types">
+          </div>
+          <h3 class="service-card-title" data-i18n="service_card2_title">Building Types</h3>
+          <ul class="service-list">
+            <li data-i18n="service_card2_item1">Manufacturing & Warehouse Facilities</li>
+            <li data-i18n="service_card2_item2">Underground Structures & Tunnels</li>
+            <li data-i18n="service_card2_item3">Multi-Story Residential Buildings</li>
+            <li data-i18n="service_card2_item4">Commercial & Industrial Complexes</li>
+            <li data-i18n="service_card2_item5">Hotels & Sports Centers</li>
+            <li data-i18n="service_card2_item6">Schools & Academic Institutions</li>
+            <li data-i18n="service_card2_item7">Hospitals & Places of Worship</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <img src="assets/images/icon-contract.png" alt="Consulting & Inspection">
+          </div>
+          <h3 class="service-card-title" data-i18n="service_card3_title">Consulting & Inspection</h3>
+          <ul class="service-list">
+            <li data-i18n="service_card3_item1">Multi-Level Parking Facilities</li>
+            <li data-i18n="service_card3_item2">Preliminary Studies & Cost Evaluations</li>
+            <li data-i18n="service_card3_item3">Technical Plans & Specifications</li>
+            <li data-i18n="service_card3_item4">Feasibility & Load Studies</li>
+            <li data-i18n="service_card3_item5">Analysis of Existing Structures</li>
+            <li data-i18n="service_card3_item6">Structural Strength Assessments</li>
+            <li data-i18n="service_card3_item7">Full or Partial Site Surveillance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="services-highlight-box">
+        <p data-i18n="services_highlight">
+          We deliver structural solutions for new constructions and modifications to existing buildings. Every project is unique — from targeted structural modifications to large-scale restorations and renovations. Our engineers and technicians combine advanced analytical tools and proven practical experience. Proudly servicing Canada and the United States.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Projects Section (Clean 3-Project Grid, No Clutter)
+       ========================================================================== -->
+  <section class="portfolio-hero" id="projects">
+    <div class="portfolio-hero-overlay"></div>
+    <div class="container portfolio-hero-content">
+      <span class="section-tag" style="color: var(--accent-cyan);" data-i18n="projects_tag">PORTFOLIO</span>
+      <h2 data-i18n="projects_title">Featured Projects</h2>
+      <p data-i18n="projects_desc">
+        With over three decades of engineering experience, our portfolio spans thousands of successful projects across North America.
+      </p>
+    </div>
+  </section>
+
+  <!-- Exactly 3 Projects in 3-Column Grid -->
+  <section class="section" style="padding-top: 70px; padding-bottom: 90px;">
+    <div class="container">
+      <div class="projects-grid-3">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/projects/M_SUR_LA_MONTAGNE.jpeg" alt="M Sur la Montagne">
+          </div>
+          <div class="project-info">
+            <span class="project-category" data-i18n="proj1_cat">Heritage & Luxury Residential</span>
+            <h3 class="project-title" data-i18n="proj1_title">M Sur la Montagne</h3>
+            <p class="project-desc" data-i18n="proj1_desc">
+              Transformation of a historic heritage college into luxury living amid a 700,000 sq. ft private park in downtown Montreal. Structural designs for top floor units and new building extension to existing structure.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/projects/430_Sherbroke_Est-Main.jpg" alt="430 Sherbrooke St. E.">
+          </div>
+          <div class="project-info">
+            <span class="project-category" data-i18n="proj2_cat">Boutique Hotel & Preservation</span>
+            <h3 class="project-title" data-i18n="proj2_title">430 Sherbrooke St. E.</h3>
+            <p class="project-desc" data-i18n="proj2_desc">
+              Downtown Montreal development and structural engineering up to construction, preserving the historic front facade for this premier boutique hotel.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/projects/colisee_b.jpg" alt="Colisée Trois-Rivières">
+          </div>
+          <div class="project-info">
+            <span class="project-category" data-i18n="proj3_cat">Sports Center & Arena</span>
+            <h3 class="project-title" data-i18n="proj3_title">Colisée Trois-Rivières</h3>
+            <p class="project-desc" data-i18n="proj3_desc">
+              Structural plans and technical specifications for the sports arena complex, including technical assistance for metalwork, grandstands, curtain wall supports, and access infrastructure.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Our Team Section (Full Square Image on Right, Silverio Uncropped)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="team">
+    <div class="container">
+      <div class="team-layout-grid">
+        <!-- Left: Story honoring founder and continuing legacy -->
+        <div class="team-story-content">
+          <span class="section-tag" data-i18n="team_tag">Our Team</span>
+          <h2 data-i18n="team_title">Decades of Dedicated Engineering Expertise</h2>
+          <p data-i18n="team_desc_1">
+            DAHL MARZIN was founded in 1991 by the late Silverio Marzin, whose leadership, dedication, and technical rigor built a legacy of engineering excellence recognized across North America.
+          </p>
+          <p data-i18n="team_desc_2">
+            Today, our engineering professionals and technicians continue this proud tradition of excellence, delivering dependable structural solutions, thorough analysis, and practical consultation to our clients and partners.
+          </p>
+          <div class="team-legacy-badge">
+            <span style="color: var(--accent-cyan);">✦</span>
+            <span data-i18n="team_legacy_badge">A Heritage of Structural Excellence</span>
+          </div>
+        </div>
+
+        <!-- Right: Square photo fully visible (Silverio uncropped) -->
+        <div class="team-photo-wrapper">
+          <img src="assets/images/team.jpg" alt="Dahl Marzin Engineering Team">
+          <div class="team-photo-caption">Dahl Marzin Engineering Team</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section (Direct Contact Cards: Phone, Email & Key Contacts)
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 45px;">
+        <span class="section-tag" data-i18n="contact_badge">Get in Touch</span>
+        <h2 class="section-title" data-i18n="contact_title">Direct Contact</h2>
+        <p class="section-desc" data-i18n="contact_desc">
+          We welcome your project inquiries and consultation requests. Reach out to our central lines or connect directly with our key personnel.
+        </p>
+      </div>
+
+      <div class="contact-section-container">
+        <!-- Left: Central Office Lines -->
+        <div class="central-contact-card">
+          <div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 8px;">Dahl Marzin Inc.</h3>
+            <p class="contact-desc" data-i18n="contact_desc">
+              We welcome your project inquiries and consultation requests. Reach out to our central lines or connect directly with our key personnel.
+            </p>
+
+            <div class="direct-channels-list">
+              <!-- Phone -->
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span data-i18n="phone_label">Office Phone</span>
+                  <a href="tel:5148461040">(514) 846-1040</a>
+                </div>
+              </div>
+
+              <!-- General Email -->
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span data-i18n="general_email_label">General Inquiries</span>
+                  <a href="mailto:info@dahlmarzin.com">info@dahlmarzin.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.82rem; color: var(--text-light); border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 18px;">
+            Montréal &bull; Québec &bull; Canada &bull; USA
+          </div>
+        </div>
+
+        <!-- Right: Key Personnel (Pierre Damour & Bernie Liwag) -->
+        <div class="personnel-contact-card">
+          <div>
+            <h3 data-i18n="key_contacts_title">Key Contacts</h3>
+            <p class="personnel-sub" data-i18n="key_contacts_sub">Direct lines for project follow-ups and technical inquiries:</p>
+
+            <div class="personnel-grid">
+              <!-- Pierre Damour -->
+              <div class="person-card">
+                <div class="person-info">
+                  <h4>Pierre Damour</h4>
+                  <span class="person-role" data-i18n="pierre_role">Senior Technician</span>
+                </div>
+                <a href="mailto:pdamour@dahlmarzin.com" class="person-email-btn">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span>pdamour@dahlmarzin.com</span>
+                </a>
+              </div>
+
+              <!-- Bernie Liwag -->
+              <div class="person-card">
+                <div class="person-info">
+                  <h4>Bernie Liwag</h4>
+                  <span class="person-role" data-i18n="bernie_role">Engineer</span>
+                </div>
+                <a href="mailto:liwag@dahlmarzin.com" class="person-email-btn">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span>liwag@dahlmarzin.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid #f1f5f9; font-size: 0.88rem; color: #64748b;">
+            Direct consultation for structural design, site inspection, and technical evaluations.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer (Logo Still 1.5x Bigger: 185px Height)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Legacy (Logo 185px Height) -->
+        <div class="footer-brand">
+          <img src="assets/images/logo-footer.png" alt="Dahl Marzin Inc. Logo">
+          <p data-i18n="footer_desc">
+            Consulting structural engineers since 1991. Continuing a proud tradition of precision, structural integrity, and dedicated client service across Canada and the United States.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_quick_links">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+            <li><a href="#services" data-i18n="nav_services">Specialty & Services</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#team" data-i18n="nav_team">Our Team</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Contacts -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_direct_contact">Direct Contacts</h4>
+          <ul class="footer-contacts-list">
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <a href="tel:5148461040">(514) 846-1040</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <a href="mailto:info@dahlmarzin.com">info@dahlmarzin.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <span style="color: var(--accent-cyan); font-size: 0.8rem; font-weight: 700;">PD</span>
+              <a href="mailto:pdamour@dahlmarzin.com">pdamour@dahlmarzin.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <span style="color: var(--accent-cyan); font-size: 0.8rem; font-weight: 700;">BL</span>
+              <a href="mailto:liwag@dahlmarzin.com">liwag@dahlmarzin.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p data-i18n="footer_copyright">© 2026 Dahl Marzin Inc. All Rights Reserved.</p>
+        <p>Structural Engineering Excellence Since 1991</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

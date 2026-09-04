@@ -1,0 +1,257 @@
+/**
+ * Dahl Marzin Inc. - Bilingual Language Engine (EN / FR)
+ */
+
+const TRANSLATIONS = {
+  en: {
+    meta_title: "Montreal Structural Engineers | Dahl Marzin Inc.",
+    nav_home: "Home",
+    nav_about: "About Us",
+    nav_services: "Specialty & Services",
+    nav_projects: "Projects",
+    nav_team: "Our Team",
+    nav_contact: "Contact",
+
+    hero_company: "DAHL MARZIN INC.",
+    hero_title_2: "Structural Engineering Firm",
+    hero_title_3: "you can rely on",
+    hero_btn: "Contact Our Team",
+
+    about_tag: "About Us",
+    about_title: "Structural Engineering Consulting Since 1991",
+    about_badge_sub: "Established",
+    about_badge_main: "Since 1991",
+    about_p1: "DAHL MARZIN INC. is a structural engineering consulting firm established in 1991, specializing in residential, commercial and industrial buildings. Our team possesses deep practical expertise in steel, concrete, and timber structures.",
+    about_p2: "We design all types of structures and provide optimal, practical consultation with cost-effective and dependable solutions to help our clients meet their construction budget and project timelines.",
+
+    services_tag: "Our Services",
+    services_title: "Engineering Specialties & Solutions",
+    service_card1_title: "Design & Structures",
+    service_card1_item1: "Structures of Buildings",
+    service_card1_item2: "Foundation Designs",
+    service_card1_item3: "Steel & Concrete Structures",
+    service_card1_item4: "Retaining Walls & Reservoirs",
+    service_card1_item5: "Piles & Underpinning",
+    service_card1_item6: "Restoration & Repair of Existing Structures",
+    service_card1_item7: "Timber Construction",
+
+    service_card2_title: "Building Types",
+    service_card2_item1: "Manufacturing & Warehouse Facilities",
+    service_card2_item2: "Underground Structures & Tunnels",
+    service_card2_item3: "Multi-Story Residential Buildings",
+    service_card2_item4: "Commercial & Industrial Complexes",
+    service_card2_item5: "Hotels & Sports Centers",
+    service_card2_item6: "Schools & Academic Institutions",
+    service_card2_item7: "Hospitals & Places of Worship",
+
+    service_card3_title: "Consulting & Inspection",
+    service_card3_item1: "Multi-Level Parking Facilities",
+    service_card3_item2: "Preliminary Studies & Cost Evaluations",
+    service_card3_item3: "Technical Plans & Specifications",
+    service_card3_item4: "Feasibility & Load Studies",
+    service_card3_item5: "Analysis of Existing Structures",
+    service_card3_item6: "Structural Strength Assessments",
+    service_card3_item7: "Full or Partial Site Surveillance",
+
+    services_highlight: "We deliver structural solutions for new constructions and modifications to existing buildings. Every project is unique — from targeted structural modifications to large-scale restorations and renovations. Our engineers and technicians combine advanced analytical tools and proven practical experience. Proudly servicing Canada and the United States.",
+
+    projects_tag: "PORTFOLIO",
+    projects_title: "Featured Projects",
+    projects_desc: "With over three decades of engineering experience, our portfolio spans thousands of successful projects across North America.",
+    projects_contact_note: "For inquiries regarding our past projects or technical specifications, please contact our team.",
+
+    proj1_title: "M Sur la Montagne",
+    proj1_cat: "Heritage & Luxury Residential",
+    proj1_desc: "Transformation of a historic heritage college into luxury living amid a 700,000 sq. ft private park in downtown Montreal. Structural designs for top floor units and new building extension to existing structure.",
+
+    proj2_title: "430 Sherbrooke St. E.",
+    proj2_cat: "Boutique Hotel & Preservation",
+    proj2_desc: "Downtown Montreal development and structural engineering up to construction, preserving the historic front facade for this premier boutique hotel.",
+
+    proj3_title: "Colisée Trois-Rivières",
+    proj3_cat: "Sports Center & Arena",
+    proj3_desc: "Structural plans and technical specifications for the sports arena complex, including technical assistance for metalwork, grandstands, curtain wall supports, and access infrastructure.",
+
+    team_tag: "Our Team",
+    team_title: "Decades of Dedicated Engineering Expertise",
+    team_desc_1: "DAHL MARZIN was founded in 1991 by the late Silverio Marzin, whose leadership, dedication, and technical rigor built a legacy of engineering excellence recognized across North America.",
+    team_desc_2: "Today, our engineering professionals and technicians continue this proud tradition of excellence, delivering dependable structural solutions, thorough analysis, and practical consultation to our clients and partners.",
+    team_legacy_badge: "A Heritage of Structural Excellence",
+
+    contact_badge: "Get in Touch",
+    contact_title: "Direct Contact",
+    contact_desc: "We welcome your project inquiries and consultation requests. Reach out to our central lines or connect directly with our key personnel.",
+    phone_label: "Office Phone",
+    general_email_label: "General Inquiries",
+    key_contacts_title: "Key Contacts",
+    key_contacts_sub: "Direct lines for project follow-ups and technical inquiries:",
+    pierre_role: "Senior Technician",
+    bernie_role: "Engineer",
+
+    footer_desc: "Consulting structural engineers since 1991. Continuing a proud tradition of precision, structural integrity, and dedicated client service across Canada and the United States.",
+    footer_quick_links: "Quick Links",
+    footer_direct_contact: "Direct Contacts",
+    footer_copyright: "© 2026 Dahl Marzin Inc. All Rights Reserved."
+  },
+
+  fr: {
+    meta_title: "Ingénieurs en Structure Montréal | Dahl Marzin Inc.",
+    nav_home: "Accueil",
+    nav_about: "À Propos",
+    nav_services: "Spécialités & Services",
+    nav_projects: "Projets",
+    nav_team: "Notre Équipe",
+    nav_contact: "Contact",
+
+    hero_company: "DAHL MARZIN INC.",
+    hero_title_2: "Ingénierie structurelle",
+    hero_title_3: "sur laquelle vous pouvez compter",
+    hero_btn: "Contacter Notre Équipe",
+
+    about_tag: "À Propos",
+    about_title: "Consultants en génie des structures depuis 1991",
+    about_badge_sub: "Fondée",
+    about_badge_main: "Depuis 1991",
+    about_p1: "DAHL MARZIN INC. est une firme de génie-conseil en structures établie en 1991, spécialisée dans les bâtiments résidentiels, commerciaux et industriels. Notre équipe possède une expertise approfondie des charpentes en acier, béton et bois.",
+    about_p2: "Nous concevons tous types de structures et offrons des conseils pratiques et optimaux, garantissant des solutions fiables et économiques pour respecter les budgets et les échéanciers de construction.",
+
+    services_tag: "Nos Services",
+    services_title: "Spécialités & Solutions en Ingénierie",
+    service_card1_title: "Conception & Structures",
+    service_card1_item1: "Structures de bâtiments",
+    service_card1_item2: "Conception de fondations",
+    service_card1_item3: "Structures en acier et en béton",
+    service_card1_item4: "Murs de soutènement et réservoirs",
+    service_card1_item5: "Pieux et sous-œuvre",
+    service_card1_item6: "Restauration et réfection de structures",
+    service_card1_item7: "Charpentes en bois d'ingénierie",
+
+    service_card2_title: "Types de Bâtiments",
+    service_card2_item1: "Installations industrielles et entrepôts",
+    service_card2_item2: "Structures souterraines et tunnels",
+    service_card2_item3: "Immeubles résidentiels à plusieurs étages",
+    service_card2_item4: "Complexes commerciaux et industriels",
+    service_card2_item5: "Hôtels et centres sportifs",
+    service_card2_item6: "Établissements scolaires et collèges",
+    service_card2_item7: "Hôpitaux et édifices institutionnels",
+
+    service_card3_title: "Consultation & Surveillance",
+    service_card3_item1: "Stationnements étagés et souterrains",
+    service_card3_item2: "Études préliminaires et estimation des coûts",
+    service_card3_item3: "Plans et devis techniques d'ingénierie",
+    service_card3_item4: "Études de faisabilité et capacités portantes",
+    service_card3_item5: "Analyse et diagnostic de structures existantes",
+    service_card3_item6: "Évaluation de résistance et conformité",
+    service_card3_item7: "Surveillance complète ou partielle de chantier",
+
+    services_highlight: "Nous apportons des solutions concrètes pour les nouvelles constructions et les modifications de structures existantes. Chaque projet est unique, des réfections ciblées aux restaurations d'envergure. Nos ingénieurs et techniciens allient outils d'analyse de pointe et rigueur de terrain. Fiers de desservir le Canada et les États-Unis.",
+
+    projects_tag: "PORTFOLIO",
+    projects_title: "Projets Notables",
+    projects_desc: "Avec plus de trois décennies de savoir-faire, notre portfolio compte des milliers de réalisations à travers l'Amérique du Nord.",
+    projects_contact_note: "Pour consulter notre historique de projets ou pour une demande technique, contactez notre équipe.",
+
+    proj1_title: "M Sur la Montagne",
+    proj1_cat: "Patrimoine & Résidentiel de Luxe",
+    proj1_desc: "Transformation d'un collège patrimonial en résidences prestigieuses au cœur d'un parc de 700 000 pi² à Montréal. Conception pour les unités supérieures et agrandissement structural de l'édifice.",
+
+    proj2_title: "430 Sherbrooke St. E.",
+    proj2_cat: "Hôtel Boutique & Préservation",
+    proj2_desc: "Développement et ingénierie structurale jusqu'à la livraison au centre-ville de Montréal, en préservant intégralement la façade patrimoniale de cet hôtel boutique.",
+
+    proj3_title: "Colisée Trois-Rivières",
+    proj3_cat: "Centre Sportif & Aréna",
+    proj3_desc: "Plans et devis techniques pour ce complexe sportif majeur, incluant l'assistance technique pour les éléments en acier, béton des gradins, murs-rideaux et rampes d'accès.",
+
+    team_tag: "Notre Équipe",
+    team_title: "Des Décennies d'Excellence et de Continuité",
+    team_desc_1: "DAHL MARZIN a été fondée en 1991 par feu Silverio Marzin, dont le leadership, le dévouement et la rigueur technique ont forgé une réputation d'excellence reconnue à travers l'Amérique du Nord.",
+    team_desc_2: "Aujourd'hui, nos professionnels de l'ingénierie et techniciens perpétuent cette grande tradition, offrant des solutions structurales fiables, des analyses rigoureuses et une écoute attentive à l'ensemble de nos clients et partenaires.",
+    team_legacy_badge: "Un héritage d'excellence en ingénierie",
+
+    contact_badge: "Nous Joindre",
+    contact_title: "Contact Direct",
+    contact_desc: "Nous vous invitons à nous joindre pour tout nouveau projet ou consultation. Communiquez avec nos lignes principales ou directement avec notre personnel clé.",
+    phone_label: "Téléphone Général",
+    general_email_label: "Renseignements Généraux",
+    key_contacts_title: "Personnel Clé",
+    key_contacts_sub: "Lignes directes pour vos suivis de dossiers et demandes techniques :",
+    pierre_role: "Technicien Senior",
+    bernie_role: "Ingénieur",
+
+    footer_desc: "Génie-conseil en structures depuis 1991. Poursuivant une solide réputation de précision, d'intégrité structurale et d'engagement auprès de nos clients partout au Canada et aux États-Unis.",
+    footer_quick_links: "Liens Rapides",
+    footer_direct_contact: "Lignes Directes",
+    footer_copyright: "© 2026 Dahl Marzin Inc. Tous droits réservés."
+  }
+};
+
+let currentLang = 'en';
+
+function getInitialLanguage() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const langParam = urlParams.get('lang');
+  if (langParam && (langParam === 'fr' || langParam === 'en')) {
+    return langParam;
+  }
+  const stored = localStorage.getItem('dm_lang');
+  if (stored === 'fr' || stored === 'en') {
+    return stored;
+  }
+  const navLang = navigator.language || navigator.userLanguage;
+  if (navLang && navLang.toLowerCase().startsWith('fr')) {
+    return 'fr';
+  }
+  return 'en';
+}
+
+function setLanguage(lang) {
+  if (!TRANSLATIONS[lang]) return;
+  currentLang = lang;
+  localStorage.setItem('dm_lang', lang);
+  document.documentElement.lang = lang;
+
+  const url = new URL(window.location);
+  url.searchParams.set('lang', lang);
+  window.history.replaceState({}, '', url);
+
+  const dict = TRANSLATIONS[lang];
+
+  // Update text nodes
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      el.textContent = dict[key];
+    }
+  });
+
+  // Update page title
+  if (dict.meta_title) {
+    document.title = dict.meta_title;
+  }
+
+  // Update language buttons active state
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    const btnLang = btn.getAttribute('data-lang');
+    if (btnLang === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const initialLang = getInitialLanguage();
+  setLanguage(initialLang);
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetLang = btn.getAttribute('data-lang');
+      if (targetLang) {
+        setLanguage(targetLang);
+      }
+    });
+  });
+});

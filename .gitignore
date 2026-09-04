@@ -1,0 +1,7 @@
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+wix_viewer_model.json
